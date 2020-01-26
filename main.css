@@ -1,5 +1,5 @@
 /* This rule will apply to all sections within the page */
-section {
+#product-overview {
   /* selector*/
   background-color: red; /* declaration */
 }
@@ -8,4 +8,9 @@ h1 {
   color: white;
   /* font-family: sans-serif; it uses the one set on the browser (On google Chrome this can be checked on Settings > Customize Fonts */
   font-family: "Anton", sans-serif;
+}
+
+/* kebab case*/
+.section-title {
+  color: #2ddf5c;
 }
