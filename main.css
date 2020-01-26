@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* This rule will apply to all sections within the page */
 #product-overview {
   /* selector*/
@@ -15,6 +19,6 @@ h1 {
   font-family: "Anton", sans-serif;
 }
 
-h1 {
+/* h1 {
   font-family: sans-serif;
-}
+} */
