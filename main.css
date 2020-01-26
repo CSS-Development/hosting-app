@@ -13,12 +13,12 @@ body {
   color: #2ddf5c;
 }
 
-h1 {
+#product-overview h1 {
   color: white;
   /* font-family: sans-serif; it uses the one set on the browser (On google Chrome this can be checked on Settings > Customize Fonts */
   font-family: "Anton", sans-serif;
 }
 
-/* h1 {
+h1 {
   font-family: sans-serif;
-} */
+}
