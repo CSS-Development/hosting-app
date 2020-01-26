@@ -1,0 +1,8 @@
+/* This rule will apply to all sections within the page */
+section {
+  /* selector*/
+  background-color: red; /* declaration */
+}
+
+h1 {
+}
