@@ -1,7 +1,8 @@
 /* This rule will apply to all sections within the page */
 #product-overview {
   /* selector*/
-  /* background: url("freedom.jpg"); declaration */
+  background: url("freedom.jpg") left 10% bottom 20% / cover no-repeat
+    border-box; /*  declaration */ /* here the last one is the background-attachment*/
   background-image: url("freedom.jpg");
   /*
     cover: does the same as 100%. finds out which part of the container(width or height) is the important in your image.
@@ -9,8 +10,13 @@
     contain: ensures that the full image is visible in the container. there may be some edges showing up due to the priority of this property.
     The image doesnt fill the entire container but ensures that the entire image is visible.
   */
-  background-size: contain; /* width height or cover, contain, etc*/
-  background-repeat: no-repeat;
+  /*background-size: cover;*/ /* width height or cover, contain, etc*/
+  /*background-position: left 10% bottom 20%;*/ /* 50% is the default*/
+  /* background-repeat: no-repeat; */
+  /* background-origin: border-box; */
+  /*background-clip: padding-box;*/ /* we define where the image should be clipped if necessary and now it will be after the pading. with content it will be clipped before the padding */
+  /*background-attachment: fixed;*/ /* fixed takes the viewport as a reference. can be used for parallax effect*/
+  /* border: 5px dashed red; */
   padding: 10px;
   /* border: 5px black solid;
   margin: 10px; */
