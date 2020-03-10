@@ -11,12 +11,21 @@ body {
 /* Header */
 
 .main-header {
-  background: #2ddf5c;
   width: 100%;
-  padding: 8px 16px;
   position: fixed;
   top: 0;
   left: 0;
+  background: #2ddf5c;
+  padding: 8px 16px;
+  /* when two elements have the same z-index (e.g: 0 or auto) the one that will go front is the one that shows up later in our code 
+    Example: 
+    
+    <div class="background"/>
+    <div class="main-header>
+      {content}
+    </div> -> this one will be on front due to the order ir our htlm code even though they both have the same z-index
+  */
+  z-index: 1;
 }
 
 .main-header > div {
