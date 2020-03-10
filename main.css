@@ -1,7 +1,16 @@
 /* This rule will apply to all sections within the page */
 #product-overview {
   /* selector*/
-  background: url("freedom.jpg"); /* declaration */
+  /* background: url("freedom.jpg"); declaration */
+  background-image: url("freedom.jpg");
+  /*
+    cover: does the same as 100%. finds out which part of the container(width or height) is the important in your image.
+    In our case is a landscape mode because the aspect ratio is bigger on the width.
+    contain: ensures that the full image is visible in the container. there may be some edges showing up due to the priority of this property.
+    The image doesnt fill the entire container but ensures that the entire image is visible.
+  */
+  background-size: contain; /* width height or cover, contain, etc*/
+  background-repeat: no-repeat;
   padding: 10px;
   /* border: 5px black solid;
   margin: 10px; */
