@@ -1,9 +1,10 @@
 /* This rule will apply to all sections within the page */
 #product-overview {
   /* selector*/
-  background: url("freedom.jpg") left 10% bottom 20% / cover no-repeat
-    border-box; /*  declaration */ /* here the last one is the background-attachment*/
-  background-image: url("freedom.jpg");
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("./images/freedom.jpg") left 10% bottom 20% / cover no-repeat border-box,
+    #ff1b68; /*  declaration */ /* here the last one is the background-attachment*/
+  /* background-image: url("./images/freedom.jpg"); */
   /*
     cover: does the same as 100%. finds out which part of the container(width or height) is the important in your image.
     In our case is a landscape mode because the aspect ratio is bigger on the width.
@@ -17,6 +18,18 @@
   /*background-clip: padding-box;*/ /* we define where the image should be clipped if necessary and now it will be after the pading. with content it will be clipped before the padding */
   /*background-attachment: fixed;*/ /* fixed takes the viewport as a reference. can be used for parallax effect*/
   /* border: 5px dashed red; */
+  /* background-image: linear-gradient(
+    180deg,
+    red 70%,
+    blue 80%,
+    rgba(0, 0, 0, 0.5)
+  ); */
+  /* background-image: radial-gradient(
+    circle 20px at 20% 50%,
+    red 70%,
+    blue,
+    green
+  ); */
   padding: 10px;
   /* border: 5px black solid;
   margin: 10px; */
@@ -39,6 +52,7 @@
   position: absolute;
   bottom: 5%;
   left: 3%;
+  width: 100%;
 }
 
 /* Plan Features */
@@ -132,6 +146,7 @@
   border: 2px solid #424242;
   border-radius: 50%;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .key-feature__description {
