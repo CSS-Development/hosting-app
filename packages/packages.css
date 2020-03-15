@@ -1,5 +1,5 @@
 main {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .background {
@@ -13,7 +13,7 @@ main {
 
 .plan {
   border: 4px solid #0e4f1f;
-  margin: 16px 0;
+  margin: 1rem 0;
   width: 80%;
   border-left: none;
   /* z-index: auto = 0 */
@@ -32,7 +32,7 @@ main {
   color: inherit;
   text-decoration: none;
   display: block;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .plan__subtitle {
@@ -54,19 +54,19 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 20px;
-  font-size: 12px;
+  margin: 1.2rem;
+  font-size: 0.9rem;
   color: white;
   background: #ff5454;
-  padding: 8px;
+  padding: 0.5rem;
   /* z-index: 10; */
 }
 
 .plan__description {
   background: white;
-  padding: 16px;
+  padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: #0e4f1f;
 }
 
