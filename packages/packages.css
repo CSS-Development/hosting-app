@@ -88,7 +88,7 @@ main {
 }
 #plan-free:hover,
 #plan-free:active {
-  border-color: #ff5454;
+  border-left-color: #ff5454;
 }
 
 #plan-premium {
@@ -101,4 +101,25 @@ main {
 
 #plan-premium .plan__subtitle {
   color: #bbb;
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .plan {
+    border-left: 4px solid #0e4f1f;
+  }
+  #plan-free {
+    border-right: 4px solid #0e4f1f;
+  }
+  #plan-free:hover,
+  #plan-free:active {
+    border-right-color: #ff5454;
+  }
 }
