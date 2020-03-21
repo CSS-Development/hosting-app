@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("./anonymousPro-Regular.woff2") format("woff2"),
+    url("./anonymousPro-Regular.woff") format("woff"),
+    url("./anonymousPro-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "AnonymousPro";
+  src: url("./anonymousPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
 main {
   padding-top: 2rem;
 }
@@ -63,11 +76,21 @@ main {
 }
 
 .plan__description {
-  background: white;
   padding: 1rem;
   border: 1px solid #0e4f1f;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   color: #0e4f1f;
+  background: white;
+  /* font-family: "AnonymousPro", sans-serif; */
+  /* font-weight: 700; */
+  /* line-height: 2; */ /* this refers to the font size */ /* avoid %*/
+  /* font-weight: 900;
+  font-style: italic; */
+  /* text-decoration: overline wavy red; */
+  text-shadow: 2px 2px 7px #b9b4b4; /* x y */
+  /* font: status-bar; */
+  font-size: 1.2rem;
+  /* font-style font-variant font-weight font-size/line-height font-family*/
 }
 
 .clearfix {

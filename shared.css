@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 * {
   /* this applies width and height only to the content and doesnt includes the padding and border */
   box-sizing: border-box;
@@ -9,6 +13,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  /* font-family: "Unknown", "Also-Unknown", sans-serif; */
   margin: 0;
 }
 
@@ -251,4 +256,11 @@ main {
 
 .open {
   display: block !important;
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
 }
