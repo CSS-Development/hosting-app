@@ -118,19 +118,25 @@
 @media (min-width: 40rem) {
   .plan__list {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .plan {
-    display: inline-block;
     width: 30%;
-    vertical-align: middle;
     min-width: 13rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
   }
 
   .plan--highlighted {
     /* box-shadow: x y blur spread color*/
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: 30rem;
+    z-index: 1;
   }
 }
 
@@ -150,16 +156,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
     width: 30%;
-    vertical-align: top;
     min-width: 13rem;
     max-width: 25rem;
+  }
+
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
   }
 }
 
